@@ -165,8 +165,8 @@ contract Project{
           _share = c.bountypot / c.revealsNum;
       }
   }
- // pay out function 
- //funtcion pay out   
+ // pay out function has issue maybe a better design is a return reward with conditions.
+ //function pay out   
   function returnReward(
       uint256 _share,
       Project storage c,
