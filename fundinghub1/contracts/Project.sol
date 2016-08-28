@@ -99,6 +99,7 @@ contract Project{
       if (block.number > _bnum - _commitDeadline) throw;
       _
   }
+  //fucntion contribute , I´m agnostic of create a real findinghub secure
 
   function commitmentProject(
       uint256 _ProjectID,
