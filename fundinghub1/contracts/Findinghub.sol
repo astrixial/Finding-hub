@@ -1,6 +1,6 @@
 
  /* the project.sol on further code can make all the functions , the propasal of code is for avoid RNG issue , 
- */public data that should not have been public , I sended  for submit on b9lab , Project.sol and geth  tests.
+ */public data that should not have been public , I sended  a b9lab , Project.sol and geth  tests.
 import 'Project.sol';
 
 contract FundingHub {
