@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Findinghub - Descentralized Plattaform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body class="site">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">dAgora</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <p class="navbar-text navbar-right" style="padding-right: 20px;">CB Balance: <span id="cb_balance"></span></p>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">My Orders</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/add.html">Add Product</a></li>
+            <li><a href="/withdraw.html">Withdraw</a></li>
+            <li><a href="/update.html">Update Stock</a></li>
+          </ul>
+        </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Search</button>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container site-content">
+    <div id="status" class="alert"></div>
+    <h1>dAgora <span class="subheading">Decentralized Marketplace</span></h1>
+
+    <div id="products" class="col-md-12">
+
+    </div>
+  </div>
+  <footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="https://twitter.com/paulszczesny0"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/paulsz"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/dsystems-io/dAgora"><i class="fa fa-github"></i></a>
+			</div>
+			<div class="footer-left">
+				<p class='contract_address'><b>Contract</b>: <span id="c_address" class="c_address"></span></p>
+        <p class='contract_balance'><b>Balance</b>: <span id="c_balance"></span> ETH <button type="button" class="btn btn-xs btn-danger" onclick="withdraw();">Withdraw</button></p>
+			</div>
+		</footer>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
+Contact GitHub API Training Shop Blog About
