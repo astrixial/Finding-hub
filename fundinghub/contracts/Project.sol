@@ -33,7 +33,7 @@ contract Project {
   modifier isHub() {  if(msg.sender != hub) throw;  _}
 }
 
-  struct Contributtor {
+  struct Contributor {
 
     uint amount ;
     uint index;
