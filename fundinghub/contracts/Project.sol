@@ -31,7 +31,6 @@ contract Project {
   modifier beFalse(bool _t) { if (_t) throw; _}
 
   modifier isHub() {  if(msg.sender != hub) throw;  _}
-}
 
   struct Contributor {
 
